@@ -21,6 +21,6 @@ class Sensor
     unsigned char offset = 136;
     float angle = 0;
     float gyroRate;
-    const float G_GAIN = 0.07
+    
 
 };

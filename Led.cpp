@@ -22,3 +22,9 @@ void Led::setAlltoWhite(){
     leds[i] = CRGB::Red;
   }
 }
+
+void Led::setColor(int i,uint8_t red,uint8_t green,uint8_t blue){
+  leds[i].r = red;
+  leds[i].g = green;
+  leds[i].b = blue;
+}

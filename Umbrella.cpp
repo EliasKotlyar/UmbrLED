@@ -10,6 +10,7 @@ void Umbrella::setup()
   Serial.begin(115200);
   sensor.setup();
   webservice.setup();
+  webservice.setLed(led);
   led.setup();
   led.setAlltoWhite();
 }
@@ -18,8 +19,11 @@ void Umbrella::loop()
   sensor.loop();
   led.loop();
   webservice.loop();
+
+  /*
   Serial.print("  \tZ: "); Serial.print(sensor.getAngle());     Serial.println("  \tdps");
   delay(250);
+  */
 }
 
 
