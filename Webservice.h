@@ -14,15 +14,16 @@ class Webservice
     void setWebSocketHandler(WebSocketsServer::WebSocketServerEvent event);
     void setLed(Led l);
     void getStripIndexFromRad(float radiant);
-    void setLEDColorsForStrip(int index);
+    void setLEDColorsForStrip(int index, int physicalIndex);
   private:
     const char *ssid = "UmbrLED";
     const char *password = "magicmagic";
     WebSocketsServer webSocket = WebSocketsServer(81);
-    byte pubpayload[450];
+    const int static numberOfVirtualStrips = 40;
+    const int static numberOfPhysicalStrips = 1;
+    const int static pointsPerStrip = 15;
+    byte pubpayload[numberOfVirtualStrips*pointsPerStrip*3];
     Led led;
-    const int numberOfVirtualStrips = 40;
-    const int numberOfPhysicalStrips = 1;
-    const int pointsPerStrip = 15;
+
 
 };
