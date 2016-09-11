@@ -9,7 +9,7 @@ const int rows = 15;
 #define NUM_LEDS    rows
 #define CHIPSET     WS2812B
 #define COLOR_ORDER GRB
-CRGB leds[NUM_LEDS];
+  //CRGB leds[NUM_LEDS];
 #define BRIGHTNESS  128
 
 class Led
@@ -21,5 +21,5 @@ class Led
     void loop(void);
 
   private:
-
+    CRGB leds[NUM_LEDS];
 };
