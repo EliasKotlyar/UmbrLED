@@ -21,7 +21,7 @@ Umbrella umbrella;
 void setup() {
   umbrella.setWebSocketHandler(webSocketEvent);
   umbrella.setup();
-  
+
 }
 
 // the loop function runs over and over again forever
@@ -32,4 +32,3 @@ void loop() {
 void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t payloadlength) {
     umbrella.webSocketEvent(num,type,payload,payloadlength);
 }
-

@@ -8,10 +8,12 @@ Umbrella::Umbrella()
 void Umbrella::setup()
 {
   webservice.setup();
+  led.setup();
 }
 void Umbrella::loop()
 {
-
+  led.loop();
+  webservice.loop();
 }
 
 

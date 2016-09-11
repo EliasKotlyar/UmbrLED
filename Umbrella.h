@@ -13,5 +13,6 @@ class Umbrella
     void setWebSocketHandler(WebSocketsServer::WebSocketServerEvent event);
   private:
     Webservice webservice;
+    Led led;
 
 };

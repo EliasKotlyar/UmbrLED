@@ -25,3 +25,6 @@ void Webservice::webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, s
 void Webservice::setWebSocketHandler(WebSocketsServer::WebSocketServerEvent event){
   webSocket.onEvent(event);
 }
+void Webservice::loop()
+{
+}
