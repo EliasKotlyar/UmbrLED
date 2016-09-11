@@ -19,6 +19,7 @@ class Led
     Led(void);
     void setup(void);
     void loop(void);
+    void setAlltoWhite(void);
 
   private:
     CRGB leds[NUM_LEDS];

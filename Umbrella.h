@@ -1,6 +1,7 @@
 
 #include "Webservice.h"
 #include "Led.h"
+#include "Sensor.h"
 #include <WebSocketsServer.h>
 
 class Umbrella
@@ -14,5 +15,6 @@ class Umbrella
   private:
     Webservice webservice;
     Led led;
+    Sensor sensor;
 
 };
